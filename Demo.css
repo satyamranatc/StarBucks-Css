@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ 
+ 
+ body {
+    background-color: white;
+    color: #111111;
+    font-family: sans-serif;
+ }
+ 
+ 
+ 
+ 
+ nav
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 6rem;
+ }
+ 
+ 
+ #Logo
+ {
+    width: 5rem;
+ }
+ 
+ 
+ #SearchBar
+ {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+    /* border: 1px solid green; */
+    position: relative;
+ }
+ 
+ 
+ #SearchBar input
+ {
+    width: 100%;
+    padding: .6rem 1rem;
+    padding-right: 2.7rem;
+    border-radius: 30px;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1.1rem;
+ }
+ 
+ 
+ #SearchBar button
+ {
+    background:transparent url("./Media/search-regular-24.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: none;
+ 
+ 
+    position: absolute;
+    z-index: 10;
+    right: 9px;
+ 
+ 
+ }
+ 
+ 
+ nav ul
+ {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.2rem;
+ }
+ 
+ 
+ nav ul li{
+    font-size: 1.2rem;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ main
+ {
+    height: calc(100vh - 6rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ #Card
+ {
+    height: 90%;
+    width: 95%;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 20px rgb(180, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ 
+ 
+ #First
+ {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+ }
+ 
+ 
+ #Content
+ {
+    width: fit-content;
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+ }
+ #Content h2
+ {
+    font-size: 4rem;
+ }
+ #Content h3
+ {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+ }
+ #Content p
+ {
+    margin-top: .5rem;
+    width: 60%;
+    font-family: 1.4rem;
+ }
+ 
+ 
+ #Btns
+ {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+ }
+ 
+ 
+ 
+ 
+ #Content button:first-of-type
+ {
+    padding: .8rem 1.5rem;
+    border-radius: 40px;
+    background-color:  #007143;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+ }
+ 
+ 
+ 
+ 
+ #Content button:last-of-type
+ {
+    padding: .6rem 1.5rem;
+    border-radius:40px;
+    color: #007143;
+    background: none;
+    border: 1px solid black;
+    font-size: 1.3rem;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ #Second
+ {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+ 
+ 
+ 
+ 
+ }
+ #Coffee
+ {
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    z-index: 30;
+ }
+ 
+ 
+ 
+ 
+ #Blob
+ {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width:1168px)
+ {
+    :root{
+       font-size: 13px;
+    } 
+    main
+    {
+        height: fit-content;
+        height: 130vh;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    
+    #Card
+    {
+        flex-direction: column;
+        /* height: fit-content; */
+    }
+
+    #First
+    {
+        width: 100%;
+    }
+    #Content
+    {
+        flex-wrap: wrap;
+
+    }
+    #Second
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Coffee
+    {
+        width: 100%;
+        position: relative;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        object-fit: contain;
+    }
+
+
+    #Blob
+    {
+        width:  100%;
+        left: 20px;
+        object-fit: contain;
+        
+        
+    }
+    
+    
+    
+
+
+}
+ 
+ @media screen and (max-width:768px)
+ {
+   
+ 
+    nav{
+        flex-direction: column;
+        row-gap: 20px;
+        height: fit-content;
+    }
+    #SearchBar{
+        width: 60%;
+    }
+
+
+   
+   
+ }
+ 
+ 
+ @media screen and (max-width:408px)
+ {
+    :root{
+       font-size: 20px;
+    }
+ 
+ 
+    nav{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #SearchBar{
+        width: 100%;
+ 
+ 
+    }
+ 
+ 
+    nav ul{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+   
+ }
+ 
